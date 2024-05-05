@@ -1,0 +1,15 @@
+.bear {
+    background-color: #f5eed7;
+  }
+  
+  .bear .face {
+    fill: white;
+    rx: 50;
+    ry: 30;
+  }
+  
+  .bear .mouth {
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+  }

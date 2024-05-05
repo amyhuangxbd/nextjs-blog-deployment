@@ -1,0 +1,17 @@
+.gift .box {
+    fill: #d1495b;
+    stroke: black;
+    stroke-width: 2px;
+  }
+  
+  .gift .stripe {
+    fill: white;
+    stroke: black;
+    stroke-width: 2px;
+  }
+  
+  .gift .ribbon {
+    stroke: #b73a3b;
+    stroke-width: 4px;
+    fill: none;
+  }
