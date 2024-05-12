@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 const config: Config = {
   purge: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
   "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -45,6 +47,8 @@ const config: Config = {
       lineHeight: {
         '52px': '52px',
       },
+      serif: ["Playfair Display", ...defaultTheme.fontFamily.sans],
+      sans: ["Poppins", ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],
