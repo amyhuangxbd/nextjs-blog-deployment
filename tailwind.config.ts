@@ -1,6 +1,9 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  purge: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+  "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+  "./src/app/**/*.{js,ts,jsx,tsx,mdx}",],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -36,8 +39,24 @@ const config: Config = {
         sm: "0 5px 10px rgba(0, 0, 0, 0.12)",
         md: "0 8px 30px rgba(0, 0, 0, 0.12)",
       },
+      width: {
+        '100vw': '100vw'
+      },
+      lineHeight: {
+        '52px': '52px',
+      },
     },
   },
   plugins: [],
+  // 添加 pointer-events 别名
+  alias: {
+    'pointer-events-none': ['pointer-events: none'],
+    'transform-translate3d': ['transform: translate3d(0px, 0px, 0px) rotate(0deg);'],
+    'transition-translate0.5s': ['transition: transform 0.5s cubic-bezier(0.25, 0.005, 0.24, 0.905) 0.4s;'],
+    'transform-scaleX': ['transform: scaleX(1) translateZ(0px);'],
+    'transition-opacity-cubic-bezier': ['transition: opacity 0.5s cubic-bezier(0.25, 0.005, 0.24, 0.905) 0s'],
+    'transition-border-color': ['transition: border-color 0.2s cubic-bezier(0.25, 0.005, 0.24, 0.905) 0.75s, opacity 0s cubic-bezier(0.25, 0.005, 0.24, 0.905) 0s;'],
+    'glowingborder': ['background: linear-gradient(272.29deg, rgb(22, 235, 235) 15.21%, rgb(109, 248, 248) 76%);box-shadow: rgba(109, 248, 248, 0.6) 0px 0px 4px 1px;']
+  },
 };
 export default config;

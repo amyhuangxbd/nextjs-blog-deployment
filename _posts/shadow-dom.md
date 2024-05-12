@@ -5,7 +5,7 @@ excerpt: "Shadow DOM有以下优点：
 2、为组件创建封装样式
 3、在组件的内部元素上安全地使用 ids"
 coverImage: "${basePath}/assets/blog/preview/cover.jpg"
-date: "2024-05-11T05:35:07.322Z"
+date: "2024-05-11T23:39:10.061Z"
 author:
   name: Hebe Huang
   picture: "${basePath}/assets/blog/authors/joe.jpeg"
