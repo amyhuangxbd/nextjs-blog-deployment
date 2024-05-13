@@ -2,8 +2,12 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom"; 
 
-const Portal = props => {
-    function onclick(e) {
+interface IProps {
+  visible?: boolean;
+  closePortal: () => void;
+}
+const Portal = (props: IProps) => {
+    function onclick(e: React.MouseEvent) {
         console.log('12e: ', e)
       }
     return ( props.visible && (
@@ -25,7 +29,7 @@ const Portals = () => {
       
     }, [])
 
-    function onclick(e) {
+    function onclick(e: React.MouseEvent) {
         console.log('1e: ', e)
       }
       
