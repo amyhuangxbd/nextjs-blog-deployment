@@ -2,7 +2,12 @@ import { Scroll, useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useState } from "react";
 
-const Section = (props) => {
+interface IProps {
+  right?: boolean;
+  opacity: number;
+  children: any;
+}
+const Section = (props: IProps) => {
   return (
     <section
       className={`h-screen flex flex-col justify-center p-10 ${
@@ -37,7 +42,7 @@ export const Overlay = () => {
 
   return (
     <Scroll html>
-      <div class="w-screen">
+      <div className="w-screen">
         <Section opacity={opacityFirstSection}>
           <h1 className="font-semibold font-serif text-2xl">
             Hello, I'm Wawa Sensei
