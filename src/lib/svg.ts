@@ -28,7 +28,7 @@ const generateBauble = () => {
     }
 }
 
-function areUniqueObjects(array) {
+function areUniqueObjects(array: Record<string, any>[]) {
     const unique = new Set(array.map(item => JSON.stringify(item)));
     return unique.size === array.length;
   }
