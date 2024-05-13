@@ -2,7 +2,7 @@
 import { Canvas } from "@react-three/fiber";
 import Experience from "@/app/_components/threejs/Experience";
 
-const Scrolling = props => {
+const Scrolling = () => {
     return ( <div className=" w-100vw h-screen bg-red-200 bg-gradient-to-r from-red-200 to-red-300">
         <Canvas camera={{
             fov: 64,
