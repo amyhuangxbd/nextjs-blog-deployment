@@ -1,15 +1,15 @@
 .sleigh {
-    offset-path: path(
-      "M-200 80 L -90 80 Q 60 80 60 -10 A 50 50 0 0 0 -60 -10 Q -60 80 90 80 L 200 80"
-    );
-    animation: roller-coaster 6000ms infinite linear;
+  offset-path: path(
+    "M-200 80 L -90 80 Q 60 80 60 -10 A 50 50 0 0 0 -60 -10 Q -60 80 90 80 L 200 80"
+  );
+  animation: roller-coaster 6000ms infinite linear;
+}
+
+@keyframes roller-coaster {
+  0% {
+    offset-distance: 0%;
   }
-  
-  @keyframes roller-coaster {
-    0% {
-      offset-distance: 0%;
-    }
-    100% {
-      offset-distance: 100%;
-    }
+  100% {
+    offset-distance: 100%;
   }
+}

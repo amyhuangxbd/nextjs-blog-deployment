@@ -1,7 +1,8 @@
 const Quadratic = () => {
-    return ( <svg width="200" height="400" viewBox="-100 -200 200 400">
-    <path
-      d="
+  return (
+    <svg width="200" height="400" viewBox="-100 -200 200 400">
+      <path
+        d="
         M 0 -80
         Q 5 -75 0 -70
         Q -10 -65 0 -60
@@ -26,11 +27,12 @@ const Quadratic = () => {
         L 0 140
         L 20 140
         L -20 140"
-      fill="none"
-      stroke="#0C5C4C"
-      stroke-width="5"
-    />
-  </svg> );
+        fill="none"
+        stroke="#0C5C4C"
+        stroke-width="5"
+      />
+    </svg>
+  );
 };
 
 export default Quadratic;

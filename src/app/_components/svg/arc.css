@@ -1,14 +1,14 @@
 .candy .body {
-    stroke-linecap: round;
-    fill: none;
-  }
-  
-  .candy .red-mark {
-    stroke: #d1495b;
-    stroke-width: 2.5px;
-  }
-  
-  .candy .green-mark {
-    stroke: #234236;
-    stroke-width: 2.5px;
-  }
+  stroke-linecap: round;
+  fill: none;
+}
+
+.candy .red-mark {
+  stroke: #d1495b;
+  stroke-width: 2.5px;
+}
+
+.candy .green-mark {
+  stroke: #234236;
+  stroke-width: 2.5px;
+}
