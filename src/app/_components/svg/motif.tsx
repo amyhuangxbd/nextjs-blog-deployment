@@ -25,22 +25,19 @@ function Motif({ shape, number }: {
     shape: string;
     number: number;
 }) {
-    const Shape = {
+    const Shape = ({
         circle: Circle,
         star: Star,
         tree: Tree,
-    }[shape];
+    }[shape]) as any;
     if (number == 1) {
-        // @ts-ignore
         return <Shape  transform="translate(0, 0)" />;
     }
 
     if (number == 2) {
         return (
             <g>
-                {/* @ts-ignore */}
                 <Shape transform="translate(-30, 0)" />
-                {/* @ts-ignore */}
                 <Shape transform="translate(30, 0)" />
             </g>
         )
@@ -48,11 +45,8 @@ function Motif({ shape, number }: {
 
     return (
         <g>
-            {/* @ts-ignore */}
             <Shape />
-            {/* @ts-ignore */}
             <Shape transform="translate(-40, 0)" />
-            {/* @ts-ignore */}
             <Shape transform="translate(40, 0)" />
         </g>
     )
