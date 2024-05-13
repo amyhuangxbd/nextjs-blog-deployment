@@ -4,9 +4,9 @@ import Image from "next/image";
 import HeroButton from "./hero-button";
 import Genetic from '@/public/assets/home/genetic.svg';
 
-const AvatarIntro = props => {
+const AvatarIntro = () => {
     const [visible, setvisible] = useState(true)
-    function onScroll(e) {
+    function onScroll(e: Event) {
         console.log('e: ', e);
         const scrollTop = document.documentElement.scrollTop;
         if (scrollTop > 50) {
