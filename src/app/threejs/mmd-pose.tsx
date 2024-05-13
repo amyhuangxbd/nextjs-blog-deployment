@@ -1,5 +1,5 @@
-const MmdPose = props => {
-    return (  );
+const MmdPose = () => {
+    return ( <div>mmd-pose</div> );
 };
 
 export default MmdPose;
