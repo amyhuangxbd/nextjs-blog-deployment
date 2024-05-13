@@ -1,5 +1,5 @@
 import '@/app/styles/button.css';
-const HeroButton = props => {
+const HeroButton = () => {
     return ( <button className="hero-button">
     <span></span>
     <span></span>
