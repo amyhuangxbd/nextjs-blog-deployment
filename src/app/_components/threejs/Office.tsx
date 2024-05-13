@@ -12,20 +12,20 @@ export const FLOOR_HEIGHT = 2.3;
 export const NB_FLOORS = 3;
 
 interface IProps {
-    
+
 }
 
 export function Office(props: IProps) {
   const { nodes, materials } = useGLTF('/models/WawaOffice.glb')
-  const ref = useRef()
-  const tl = useRef();
-  const libraryRef = useRef()
-  const atticRef = useRef()
+  const ref = useRef<any>()
+  const tl = useRef<gsap.core.Timeline>();
+  const libraryRef = useRef<any>()
+  const atticRef = useRef<any>()
 
   const scroll = useScroll()
 
   useFrame(() => {
-    tl.current.seek(scroll.offset * tl.current.duration());
+    tl.current?.seek(scroll.offset * tl.current.duration());
   })
   useLayoutEffect(() => {
     tl.current = gsap.timeline();
@@ -74,7 +74,7 @@ export function Office(props: IProps) {
 
     // LIBTARY FLOOR
     tl.current.from(
-        libraryRef.current.position,
+        libraryRef.current?.position,
         {
             duration: 0.5,
 
@@ -94,7 +94,7 @@ export function Office(props: IProps) {
 
     // ATTIC
     tl.current.from(
-        atticRef.current.position,
+        atticRef.current?.position,
         {
             duration: 1.5,
 
@@ -127,15 +127,15 @@ export function Office(props: IProps) {
         position={[0.5, -1, -1]}
         rotation={[0, -Math.PI / 3, 0]}
     >
-      <mesh geometry={nodes['01_office'].geometry} material={materials['01']} />
+      <mesh geometry={(nodes['01_office'] as any).geometry} material={materials['01']} />
       <group position={[0, 2.114, -2.23]}>
         <group ref={libraryRef}>
-            <mesh geometry={nodes['02_library'].geometry} material={materials['02']}  />
+            <mesh geometry={(nodes['02_library'] as any).geometry} material={materials['02']}  />
         </group>
       </group>
       <group position={[-1.97, 4.227, -2.199]}>
         <group ref={atticRef}>
-            <mesh geometry={nodes['03_attic'].geometry} material={materials['03']} />
+            <mesh geometry={(nodes['03_attic'] as any).geometry} material={materials['03']} />
         </group>
       </group>
     </group>
