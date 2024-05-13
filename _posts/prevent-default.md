@@ -11,12 +11,15 @@ ogImage:
 ---
 
 ## 1. 链接跳转：
+
 当用户点击一个链接<a href="https://www.baidu.com">href</a`<a href="https://www.baidu.com">href</a` <a href="javascript: void;return false">`阻止默认行为href</a> `<a href="javascript: void;return false">href</a>`时，默认行为是跳转到该链接的URL。阻止这一行为可以使链接执行JavaScript函数而不是进行页面跳转。
 
 ## 2. 表单提交
+
 在表单<form>提交时，浏览器默认会将表单数据发送到表单的action属性指定的URL。阻止这一行为可以允许在数据发送前进行验证或者通过Ajax异步提交数据。
 
 ​```Html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,104 +63,101 @@ ogImage:
 ​```
 
 ## 3. 右键菜单
+
 在网页上点击右键通常会弹出一个上下文菜单。可以通过阻止这一默认行为来自定义右键菜单。
 
 ```html
-
 <div id="customContextMenu">
-        <ul>
-            <li>Option 1</li>
-            <li>Option 2</li>
-            <li>Option 3</li>
-        </ul>
-    </div>
-    <p>Right click anywhere on this page to see the custom context menu.</p>
-
-
+  <ul>
+    <li>Option 1</li>
+    <li>Option 2</li>
+    <li>Option 3</li>
+  </ul>
+</div>
+<p>Right click anywhere on this page to see the custom context menu.</p>
 ```
 
 ```css
-
 /* 隐藏自定义菜单 */
 #customContextMenu {
-    display: none;
-    position: absolute;
-    z-index: 1000;
-    width: 150px;
-    background: #f9f9f9;
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 150px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* 菜单项的样式 */
 #customContextMenu li {
-    padding: 8px 12px;
-    cursor: pointer;
-    list-style-type: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  list-style-type: none;
 }
 
 /* 鼠标悬停时的菜单项样式 */
 #customContextMenu li:hover {
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
-
 ```
 
 ```javascript
-
-const menu = document.getElementById('customContextMenu');
+const menu = document.getElementById("customContextMenu");
 
 // 阻止默认的右键菜单并显示自定义菜单
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
 
-    // 显示并定位自定义菜单
-    menu.style.display = 'block';
-    menu.style.left = `${event.pageX}px`;
-    menu.style.top = `${event.pageY}px`;
+  // 显示并定位自定义菜单
+  menu.style.display = "block";
+  menu.style.left = `${event.pageX}px`;
+  menu.style.top = `${event.pageY}px`;
 });
 
 // 点击其他地方时隐藏自定义菜单
-document.addEventListener('click', function(event) {
-    // 检查点击是否在自定义菜单外部
-    if (!menu.contains(event.target)) {
-        menu.style.display = 'none';
-    }
+document.addEventListener("click", function (event) {
+  // 检查点击是否在自定义菜单外部
+  if (!menu.contains(event.target)) {
+    menu.style.display = "none";
+  }
 });
-
 ```
 
 ## 4. 文本选择
+
 用户在拖动鼠标时通常会选择文本。阻止这一行为可以用在特定的应用中，比如拖拽界面元素而不希望选中文本。
+
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prevent Text Selection</title>
-</head>
-<body>
-    <p id="noSelect">Try to select this text. The selection will be prevented.</p>
+  </head>
+  <body>
+    <p id="noSelect">
+      Try to select this text. The selection will be prevented.
+    </p>
     <p>You can select this text normally.</p>
 
     <script>
-        // 获取需要阻止选择的元素
-        const noSelectElement = document.getElementById('noSelect');
+      // 获取需要阻止选择的元素
+      const noSelectElement = document.getElementById("noSelect");
 
-        // 添加'mousedown'事件监听器
-        noSelectElement.addEventListener('mousedown', function(event) {
-            // 阻止文本选择的默认行为
-            event.preventDefault();
-        });
+      // 添加'mousedown'事件监听器
+      noSelectElement.addEventListener("mousedown", function (event) {
+        // 阻止文本选择的默认行为
+        event.preventDefault();
+      });
 
-        // 如果需要，也可以阻止双击选择文本
-        noSelectElement.addEventListener('dblclick', function(event) {
-            event.preventDefault();
-        });
+      // 如果需要，也可以阻止双击选择文本
+      noSelectElement.addEventListener("dblclick", function (event) {
+        event.preventDefault();
+      });
     </script>
-</body>
+  </body>
 </html>
-``
-`
-
+`` `
+```

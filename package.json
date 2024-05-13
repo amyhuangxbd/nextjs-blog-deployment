@@ -4,7 +4,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "serve": "npx serve ./dist"
+    "serve": "npx serve ./dist",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
+    "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\""
   },
   "dependencies": {
     "@react-three/drei": "^9.105.6",
@@ -30,6 +32,7 @@
     "@types/three": "^0.164.0",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
+    "prettier": "^3.2.5",
     "sass": "^1.75.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"

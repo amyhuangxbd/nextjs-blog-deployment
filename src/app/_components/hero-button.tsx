@@ -1,12 +1,14 @@
-import '@/app/styles/button.css';
-const HeroButton = props => {
-    return ( <button className="hero-button">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    Submit
-  </button> );
+import "@/app/styles/button.css";
+const HeroButton = (props) => {
+  return (
+    <button className="hero-button">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </button>
+  );
 };
 
 export default HeroButton;

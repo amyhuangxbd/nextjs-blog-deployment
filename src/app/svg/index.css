@@ -1,11 +1,12 @@
 @import "https://unpkg.com/open-props" layer(design.system);
-@import "https://unpkg.com/open-props/normalize.light.min.css" layer(demo.support);
+@import "https://unpkg.com/open-props/normalize.light.min.css"
+  layer(demo.support);
 
 @keyframes slide-fade-in {
   from {
     opacity: 0;
     box-shadow: none;
-    transform: scale(.8) translateY(15vh);
+    transform: scale(0.8) translateY(15vh);
   }
 }
 
@@ -39,13 +40,13 @@
     place-content: center;
     padding-block: 30dvh;
   }
-  
+
   .cards {
     display: grid;
     gap: var(--size-3);
     grid-auto-flow: dense;
     grid-template-columns: repeat(3, var(--size-content-1));
-    
+
     & > .card {
       background: linear-gradient(#fff, #fff), var(--gradient-10);
       background-origin: border-box;
@@ -59,17 +60,17 @@
       font-family: var(--font-mono);
       display: grid;
       place-content: center;
-      
+
       &:nth-of-type(4n) {
         grid-row: span 2;
         background-image: linear-gradient(#fff, #fff), var(--gradient-3);
       }
-      
+
       &:nth-of-type(7n) {
         grid-row: span 3;
         background-image: linear-gradient(#fff, #fff), var(--gradient-5);
       }
-      
+
       &:nth-of-type(5n) {
         grid-column: span 2;
         background-image: linear-gradient(#fff, #fff), var(--gradient-18);

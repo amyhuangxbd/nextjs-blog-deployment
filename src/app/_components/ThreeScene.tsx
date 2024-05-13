@@ -6,8 +6,8 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GUI } from "three/examples/jsm/libs/lil-gui.module.min.js";
 
 const initScene = (node: HTMLDivElement) => {
-    // const [controls] = useState({ rotationSpeed: 0.01 });
-    
+  // const [controls] = useState({ rotationSpeed: 0.01 });
+
   const width = node.clientWidth;
   const height = node.clientHeight;
   const scene = new THREE.Scene();
@@ -22,9 +22,9 @@ const initScene = (node: HTMLDivElement) => {
   renderer.domElement.style.height = "100%";
   renderer.domElement.style.display = "block";
 
-//   鼠标控制场景
+  //   鼠标控制场景
   const controls = new OrbitControls(camera, renderer.domElement);
-  controls.target.set(0, 2, 0); 
+  controls.target.set(0, 2, 0);
 
   camera.position.z = 5;
 
@@ -50,9 +50,9 @@ const initScene = (node: HTMLDivElement) => {
     requestAnimationFrame(animate);
 
     if (resizeRendererToDisplaySize(renderer)) {
-        const canvas = renderer.domElement;
-        camera.aspect = canvas.clientWidth / canvas.clientHeight;
-        camera.updateProjectionMatrix();
+      const canvas = renderer.domElement;
+      camera.aspect = canvas.clientWidth / canvas.clientHeight;
+      camera.updateProjectionMatrix();
     }
 
     cube.rotation.x += 0.01;
@@ -60,8 +60,6 @@ const initScene = (node: HTMLDivElement) => {
     renderer.render(scene, camera);
   };
   animate();
-
-  
 };
 
 export default function Home() {
@@ -74,7 +72,7 @@ export default function Home() {
         setInitialized(true);
       }
     },
-    [initialized]
+    [initialized],
   );
 
   return (

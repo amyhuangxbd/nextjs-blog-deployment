@@ -1,22 +1,22 @@
 .bell:hover {
-    transform-origin: center 30%;
+  transform-origin: center 30%;
+}
+
+.bell:hover,
+.bell:hover .bell-tongue {
+  animation-duration: 0.5s;
+  animation-delay: -0.25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: ring;
+}
+
+@keyframes ring {
+  from {
+    transform: rotate(-20deg);
   }
-  
-  .bell:hover,
-  .bell:hover .bell-tongue {
-    animation-duration: 0.5s;
-    animation-delay: -0.25s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    animation-name: ring;
+  to {
+    transform: rotate(20deg);
   }
-  
-  @keyframes ring {
-    from {
-      transform: rotate(-20deg);
-    }
-    to {
-      transform: rotate(20deg);
-    }
-  }
+}

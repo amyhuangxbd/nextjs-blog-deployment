@@ -1,9 +1,8 @@
+import { OrbitControls, ScrollControls } from "@react-three/drei";
+import { Office } from "./Office";
+import { Overlay } from "./Overlay";
 
-import { OrbitControls, ScrollControls } from '@react-three/drei'
-import { Office } from './Office'
-import { Overlay } from './Overlay'
-
-const Experience = props => {
+const Experience = () => {
   return (
     <>
       <ambientLight intensity={1} />
@@ -13,7 +12,7 @@ const Experience = props => {
         <Office />
       </ScrollControls>
     </>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
