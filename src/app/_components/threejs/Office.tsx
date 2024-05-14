@@ -16,7 +16,7 @@ interface IProps {
 }
 
 export function Office(props: IProps) {
-  const { nodes, materials } = useGLTF('/models/WawaOffice.glb')
+  const { nodes, materials } = useGLTF('/nextjs-blog-deployment/models/WawaOffice.glb')
   const ref = useRef<any>()
   const tl = useRef<gsap.core.Timeline>();
   const libraryRef = useRef<any>()
@@ -142,4 +142,4 @@ export function Office(props: IProps) {
   )
 }
 
-useGLTF.preload('/models/WawaOffice.glb')
+useGLTF.preload('/nextjs-blog-deployment/models/WawaOffice.glb')
