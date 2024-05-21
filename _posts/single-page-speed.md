@@ -1,13 +1,13 @@
 ---
 title: "单页应用如何提高加载速度"
 excerpt: "通过代码分割、缓存资源、Gzip压缩、CDN、服务端渲染等，能显著提高加载速度。"
-coverImage: "${basePath}/assets/blog/preview/cover.jpg"
+coverImage: "${basePath}/assets/blog/5.jpeg"
 date: '2024-05-17T16:35:51.667Z'
 author:
-  name: Hebe Huang
-  picture: "${basePath}/assets/blog/authors/joe.jpeg"
+  name: "Hebe Huang"
+  picture: "${basePath}/assets/blog/authors/hebe.avif"
 ogImage:
-  url: "${basePath}/assets/blog/preview/cover.jpg"
+  url: "${basePath}/assets/blog/5.jpeg"
 ---
 # 使用代码分割
 将代码拆分成小块并按需加载（懒加载），以避免不必要的网络请求和减少加载时间。

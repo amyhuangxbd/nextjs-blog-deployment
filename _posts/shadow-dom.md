@@ -4,13 +4,13 @@ excerpt: "Shadow DOM有以下优点：
 1、保护组件的内部不受页面上其他 JavaScript 和 CSS 的影响
 2、为组件创建封装样式
 3、在组件的内部元素上安全地使用 ids"
-coverImage: "${basePath}/assets/blog/preview/cover.jpg"
+coverImage: "${basePath}/assets/blog/4.jpeg"
 date: "2024-05-11T23:39:10.061Z"
 author:
-  name: Hebe Huang
-  picture: "${basePath}/assets/blog/authors/joe.jpeg"
+  name: "Hebe Huang"
+  picture: "${basePath}/assets/blog/authors/hebe.avif"
 ogImage:
-  url: "${basePath}/assets/blog/preview/cover.jpg"
+  url: "${basePath}/assets/blog/4.jpeg"
 ---
 
 ## 设置Shadow DOM 的样式

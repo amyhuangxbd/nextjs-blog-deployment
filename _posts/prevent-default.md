@@ -1,13 +1,13 @@
 ---
 title: "return false 的方式来阻止浏览器的默认行为，浏览器的默认行为有哪些？"
 excerpt: "在Web开发中，浏览器的默认行为指的是浏览器在没有特别指示的情况下自动执行的行为。通过JavaScript，开发者可以通过在事件处理函数中返回false或调用event.preventDefault()方法来阻止这些默认行为。这是一种常用的技术，特别是在处理表单提交、链接跳转等操作时。以下是一些常见的浏览器默认行为。"
-coverImage: "${basePath}/assets/blog/preview/cover.jpg"
+coverImage: "${basePath}/assets/blog/1.webp"
 date: "2024-05-11T23:39:59.527Z"
 author:
-  name: Hebe Huang
-  picture: "${basePath}/assets/blog/authors/joe.jpeg"
+  name: "Hebe Huang"
+  picture: "${basePath}/assets/blog/authors/hebe.avif"
 ogImage:
-  url: "${basePath}/assets/blog/preview/cover.jpg"
+  url: "${basePath}/assets/blog/1.webp"
 ---
 
 ## 1. 链接跳转：

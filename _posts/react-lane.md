@@ -1,18 +1,18 @@
 ---
 title: "从react fiber源码中学习位运算"
-excerpt: "在 React 17 和之后的版本中，React 引入了 "Lanes" 概念来更好地管理任务优先级和并发更新。Lanes 是 React Fiber 架构的一部分，用于解决任务调度中的优先级问题，使得高优先级的更新可以打断低优先级的更新，提升用户体验。"
-coverImage: "${basePath}/assets/blog/preview/cover.jpg"
+excerpt: "在 React 17 和之后的版本中，React 引入了 Lanes 概念来更好地管理任务优先级和并发更新。Lanes 是 React Fiber 架构的一部分，用于解决任务调度中的优先级问题，使得高优先级的更新可以打断低优先级的更新，提升用户体验。"
+coverImage: "${basePath}/assets/blog/3.jpeg"
 date: '2024-05-17T16:35:51.667Z'
 author:
-  name: Hebe Huang
-  picture: "${basePath}/assets/blog/authors/joe.jpeg"
+  name: "Hebe Huang"
+  picture: "${basePath}/assets/blog/authors/hebe.avif"
 ogImage:
-  url: "${basePath}/assets/blog/preview/cover.jpg"
+  url: "${basePath}/assets/blog/3.jpeg"
 ---
 
-    在 React 17 和之后的版本中，React 引入了 "Lanes" 概念来更好地管理任务优先级和并发更新。Lanes 是 React Fiber 架构的一部分，用于解决任务调度中的优先级问题，使得高优先级的更新可以打断低优先级的更新，提升用户体验。
+在 React 17 和之后的版本中，React 引入了Lane概念来更好地管理任务优先级和并发更新。Lanes 是 React Fiber 架构的一部分，用于解决任务调度中的优先级问题，使得高优先级的更新可以打断低优先级的更新，提升用户体验
 
-    Lanes 可以看作是 React 内部用来区分不同优先级更新的一种机制。每一个 Lane 代表一个优先级级别，多个 Lanes 可以组合起来表示复杂的优先级策略。通过这种方式，React 能够在处理更新时更加灵活和高效。
+Lanes 可以看作是 React 内部用来区分不同优先级更新的一种机制。每一个 Lane 代表一个优先级级别，多个 Lanes 可以组合起来表示复杂的优先级策略。通过这种方式，React 能够在处理更新时更加灵活和高效。
 
 在React中，存在多种使用不同优先级的情况，比如：
 
