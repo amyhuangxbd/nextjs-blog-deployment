@@ -49,6 +49,9 @@ const config: Config = {
       },
       serif: ["Playfair Display", ...defaultTheme.fontFamily.sans],
       sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+      transitionDuration: {
+        '8000': '8000ms'
+      }
     },
   },
   plugins: [],
