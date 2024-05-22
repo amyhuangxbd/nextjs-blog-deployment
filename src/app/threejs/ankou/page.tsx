@@ -5,13 +5,18 @@ import { LoadingScreen } from "./components/LoadingScreen.jsx";
 import { Canvas } from "@react-three/fiber";
 import Experience from './components/Experience.jsx'
 
-const audio = new Audio(`${process.env.BASE_PATH}/models/ankou/audios/song.mp3`)
+let audio: HTMLAudioElement;
+try {
+    audio = new Audio(`${process.env.BASE_PATH}/models/ankou/audios/song.mp3`)
+} catch (error) {
+    console.error(error)
+}
 
 const Page = () => {
     const [start, setStart] = useState(false);
     useEffect(() => {
       if (start) {
-        audio.play();
+        audio?.play();
       }
     }, [start])
     
