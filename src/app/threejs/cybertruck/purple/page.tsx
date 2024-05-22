@@ -2,10 +2,8 @@
 import { Canvas } from "@react-three/fiber";
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
 import Experience from "./components/Experience.jsx";
-import { Leva } from "leva";
 function Page() {
   return (
-    <>
     <div  className="h-screen w-full ">
         <Canvas shadows camera={{ position: [0, 3, 9], fov: 42 }}>
         <color attach="background" args={["#15151a"]} />
@@ -20,8 +18,6 @@ function Page() {
         </EffectComposer>
         </Canvas>
     </div>
-    <Leva />
-    </>
   );
 }
 

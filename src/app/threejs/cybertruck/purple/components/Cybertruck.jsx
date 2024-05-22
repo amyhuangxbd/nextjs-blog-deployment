@@ -9,54 +9,38 @@ import { basePath } from '@/lib/constants';
 import * as THREE from "three";
 import { extend } from '@react-three/fiber'
 
-import stripesVertext from "../shaders/stripes.vertex.glsl"
-import stripesFragment from "../shaders/stripes.fragment.glsl"
-import { useControls } from 'leva';
-import { useFrame } from '@react-three/fiber';
-
 export function Cybertruck(props) {
   const { nodes, materials } = useGLTF(`${basePath}/models/cybertruck/cybertruck.gltf`)
   
   const ref = useRef();
-
-  const stripesControls = useControls('stripes', {
-    alpha: {
-      min: 0,
-      max: 1,
-      value: 0.5,
-    },
-    multiplier: {
-      min: 1,
-      max: 142,
-      value: 42
-    },
-    colorA: "#FF0000",
-    colorB: "#FFFF00",
-  })
-
-  useFrame((state) => {
-    ref.current.uTime = state.clock.elapsedTime;
-  })
-
   useEffect(() => {
     materials.lights.toneMapped = false;
     materials.warninglights.toneMapped = false;
     materials.warninglights.color = new THREE.Color(82, 0, 0);
   });
 
-const StripesShaderMaterial = shaderMaterial(
-  {
-    uAlpha: 0.5,
-    uMultiplier: 42,
-    uColorA: new THREE.Color(0x000000),
-    uColorB: new THREE.Color(0x000000),
-    uTime: 0,
-  },
-  stripesVertext,
-  stripesFragment
+const TestShaderMaterial = shaderMaterial(
+  {  },
+  // vertex shader
+  /*glsl*/`
+    varying vec2 vUv;
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `,
+  // fragment shader
+  /*glsl*/`
+    uniform float time;
+    uniform vec3 color;
+    varying vec2 vUv;
+    void main() {
+      gl_FragColor.rgba = vec4(vUv, 1.0, 1.0);
+    }
+  `
 )
 
-extend({ StripesShaderMaterial })
+extend({ TestShaderMaterial })
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.interior001.geometry} material={materials.lights} />
@@ -88,14 +72,7 @@ extend({ StripesShaderMaterial })
       />
       {/* BODY MESH -> SHADER */}
       <mesh geometry={nodes.interior001_6.geometry}>
-        <stripesShaderMaterial 
-          ref={ref}
-          transparent 
-          uAlpha={stripesControls.alpha} 
-          uMultiplier={stripesControls.multiplier} 
-          uColorA={stripesControls.colorA}
-          uColorB={stripesControls.colorB}
-        />
+        <testShaderMaterial opacity={0.2} transparent />
       </mesh>
 
       <mesh geometry={nodes.steer.geometry} material={materials.gray} />

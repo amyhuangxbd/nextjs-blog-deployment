@@ -15,6 +15,19 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  webpack: (config, { isServer }) => {
+    // Add GLSL file handling
+    config.module.rules.push({
+      test: /\.(glsl|vs|fs)$/,
+      use: 'webpack-glsl-loader',
+      exclude: /node_modules/,
+    });
+
+    // Ensure resolve extensions include .glsl
+    config.resolve.extensions.push('.glsl', '.vs', '.fs');
+
+    return config;
+  },
 }
  
 module.exports = nextConfig
