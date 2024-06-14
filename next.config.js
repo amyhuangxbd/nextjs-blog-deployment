@@ -9,7 +9,7 @@ const nextConfig = {
   env: {
     BASE_PATH: '/nextjs-blog-deployment'
   },
-  // distDir: 'dist',
+  distDir: 'dist',
   images: {
     unoptimized: true,
   },
