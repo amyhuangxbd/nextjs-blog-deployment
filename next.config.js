@@ -3,10 +3,8 @@
  */
 const isProd = process.env.NODE_ENV === 'production';
 
-const basePath = '/nextjs-blog-deployment'
-
 const nextConfig = {
-  basePath,
+  basePath: '/nextjs-blog-deployment',
   output: 'export',
   env: {
     BASE_PATH: '/nextjs-blog-deployment'
