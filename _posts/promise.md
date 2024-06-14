@@ -1,13 +1,13 @@
 ---
 title: "手写promise实现"
 excerpt: "手写一个简单的“Promise”实现可以帮助我们更好的理解“Promise”内部机制"
-coverImage: "${basePath}/assets/blog/Promise.jpeg"
+coverImage: "${basePath}/assets/blog/promise.jpeg"
 date: '2024-05-31T13:20:15.502Z'
 author:
   name: "Hebe Huang"
   picture: "${basePath}/assets/blog/authors/hebe.avif"
 ogImage:
-  url: "${basePath}/assets/blog/Promise.jpeg"
+  url: "${basePath}/assets/blog/promise.jpeg"
 ---
 
 手写一个简单的“Promise”实现可以帮助我们更好的理解“Promise”内部机制。以下是一个简化版的“Promise”实现
