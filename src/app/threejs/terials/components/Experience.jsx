@@ -50,7 +50,7 @@ const Background = () => {
 export const Experience = () => {
   return (
     <>
-      <OrbitControls />
+      <OrbitControls enableZoom={false} />
 
       <ambientLight intensity={0.3} />
 
