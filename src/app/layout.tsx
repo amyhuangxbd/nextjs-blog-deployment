@@ -2,6 +2,7 @@ import Footer from "@/app/_components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from 'next/script';
 
 import "./globals.css";
 
@@ -59,6 +60,8 @@ export default function RootLayout({
         
         <div className="min-h-screen">{children}</div>
         <Footer />
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3738291256196081"
+     crossOrigin="anonymous"></Script>
       </body>
     </html>
   );
