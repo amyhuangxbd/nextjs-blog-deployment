@@ -1,13 +1,13 @@
 ---
 title: "最长特殊序列II"
 excerpt: "给定字符串列表 strs ，返回其中 最长的特殊序列 的长度。如果最长特殊序列不存在，返回 -1 。"
-coverImage: "${basePath}/assets/blog/promise-all.jpeg"
+coverImage: "${basePath}/assets/blog/promise-all.svg"
 date: '2024-06-17T01:13:26.453Z'
 author:
   name: "Hebe Huang"
   picture: "${basePath}/assets/blog/authors/hebe.avif"
 ogImage:
-  url: "${basePath}/assets/blog/promise-all.jpeg"
+  url: "${basePath}/assets/blog/promise-all.svg"
 ---
 
 ### 最长特殊序列II

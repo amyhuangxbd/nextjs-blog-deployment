@@ -1,13 +1,13 @@
 ---
 title: "使用Promise封装AJAX请求"
 excerpt: "AJAX是 Asynchronous JavaScript and XML 的缩写，指的是通过 JavaScript 的 异步通信，从服务器获取 XML 文档从中提取数据，再更新当前网页的对应部分，而不用刷新整个网页。"
-coverImage: "${basePath}/assets/blog/promise-all.jpeg"
+coverImage: "${basePath}/assets/blog/promise-all.svg"
 date: '2024-06-14T10:11:44.511Z'
 author:
   name: "Hebe Huang"
   picture: "${basePath}/assets/blog/authors/hebe.avif"
 ogImage:
-  url: "${basePath}/assets/blog/promise-all.jpeg"
+  url: "${basePath}/assets/blog/promise-all.svg"
 ---
 
 ## 创建AJAX请求的步骤：
