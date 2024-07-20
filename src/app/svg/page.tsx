@@ -27,7 +27,7 @@ const elements = [<ChristmasBauble />,<Tree />,
 <GingerBreadFigure />,<House />,<BaubleClipPath />,<Star />,<SnowFlake />,<Forest />,
 <BaubleGradient />,<SnowMan />,<Quadratic />,<Cubic />,<Bell />,<Arc />,<Ribbon />,
 <Bear />,<TextPath />,<PathAnimation />,<Ringing />,<Snowing />,<BackGround />,<Diagram />,
-<SnowGlobe />,"section","blockquote","cite","dd","dt","dl","div","figcaption","figure","hr","li","ol","ul","menu","p","pre","a","abbr","b","bdi","bdo","br","code","data","dfn","em","i","kbd","mark","q","rp","ruby","rt","s","samp","small","span","strong","sub","sup","time","u","var","wbr","area","audio","img","map","track","video","embed","iframe","object","picture","source","portal","svg","canvas","noscript","del","ins","caption","col","colgroup","table","tbody","tr","td","tfoot","th","thead","button","datalist","option","fieldset","label","form","input","legend","meter","optgroup","select","output","progress","textarea","details","summary","dialog","slot","template","acronym","applet","bgsound","big","blink","center","dir","font","frame","frameset","image","keygen","marquee","menuitem","nobr","noembed","noframes","param","plaintext","rb","rtc","spacer","strike","tt","xmp"]
+<SnowGlobe />]
 
 const SVGS = () => {
     return ( <div className="cards">

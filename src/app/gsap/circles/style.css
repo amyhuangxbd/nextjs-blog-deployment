@@ -1,0 +1,40 @@
+.gsap-circle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.gsap-circle .box {
+    width: 100px;
+    height: 100px;
+  border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+  margin: 10px;
+}
+
+.gsap-circle .circle {
+    width: 100px;
+    height: 100px;
+  border-radius: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+  margin: 10px;
+}
+
+.gsap-circle .box.green, .gsap-circle .gradient-green {
+  background: linear-gradient( 114.41deg, #0ae448 20.74%, #abff84 65.5% ), url(https://assets.codepen.io/16327/noise-e82662fe.png);
+  background-blend-mode: color-dodge;
+}
+
+.gsap-circle .box.blue, .gsap-circle .gradient-blue {
+  background: radial-gradient( 78.77% 78.77% at 71.71% 30.77%, #f0fcff 0%, #9bedff 67.21%, #98ecff 76.04%, #5be1ff 84.9%, #00bae2 94.79% ), url(https://assets.codepen.io/16327/noise-e82662fe.png);
+  background-blend-mode: color-dodge;
+}
