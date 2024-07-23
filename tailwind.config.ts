@@ -13,6 +13,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        spaceGrotesk: ["Space Grotesk", "sans-serif"]
+      },
       colors: {
         primary: '#060b20',
         secondary: '#b2add2',
