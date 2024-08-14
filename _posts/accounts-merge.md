@@ -16,7 +16,11 @@ ogImage:
 
 合并账户后，按以下格式返回账户：每个账户的第一个元素是名称，其余元素是 按字符 ASCII 顺序排列 的邮箱地址。账户本身可以以 任意顺序 返回。
 
-
+<iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/prettyworld/embed/QWXKqWr?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/prettyworld/pen/QWXKqWr">
+  Untitled</a> by prettyworld (<a href="https://codepen.io/prettyworld">@prettyworld</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 > Problem: [721. 账户合并](https://leetcode.cn/problems/accounts-merge/description/)
 
 [TOC]

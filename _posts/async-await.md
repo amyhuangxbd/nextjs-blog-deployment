@@ -2,17 +2,44 @@
 title: "Learn How to Pre-render Pages Using Static Generation with Next.js"
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
 coverImage: "${basePath}/assets/blog/hello-world/cover.jpg"
-date: "2020-03-16T05:35:07.322Z"
+date: '2024-07-26T14:30:18.403Z'
 author:
-  name: "Hebe Huang"
-  picture: "${basePath}/assets/blog/authors/hebe.avif"
+  name: Tim Neutkens
+  picture: "${basePath}/assets/blog/authors/tim.jpeg"
 ogImage:
   url: "${basePath}/assets/blog/hello-world/cover.jpg"
 ---
 
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+# Example Markdown with Iframe
+
+This is an example of embedding an iframe in a Markdown file.
+
+## Video Example
+
+Here is a YouTube video embedded in an iframe:
+<div>sfsd</div>
+<h1>biaoti</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
+## Map Example
+
+Here is a Google Map embedded in an iframe:
+
+<iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Space+Needle,Seattle+WA">
+</iframe>
+
+More content can go here.
 
 Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+
 
 ## Lorem Ipsum
 
